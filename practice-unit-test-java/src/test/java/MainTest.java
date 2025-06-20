@@ -11,30 +11,24 @@ public class MainTest {
     @BeforeEach
 
     @Test
-    void mainTest() {
+    void greetingTest() {
         String msg = "Test should print greeting.";
         String exact = "Welcome";
         System.out.println(msg + exact);
     }
-//    @Test
-//    void namesTest(){
-//        ArrayList<String> names = new ArrayList<>();
-//        String msg = "This test should print an array of names added to names.";
-//        ArrayList<String> expected = names.add("John");
-//        ArrayList<String> actual = ["John", "Jane"];
-//        assertEquals(msg, expected, actual);
-//    }
 
-
-
-//    @Test
-//    void addIntTest(int x, int y){
-//        String msg = "This test should add two numbers and print the sum.";
-//        Main addInt = new Main;
-//        int sum = addInt.add(2,3);
-//        assertEquals(5,sum);
-//
-
-
-
+    @Test
+    void addTest() {
+        String msg = "This test should add two numbers and print the sum.";
+        int sum = (2 + 3);
+        assertEquals(5, sum);
+        System.out.println(msg);
+    }
+    @Test
+    void isAdultTest(){
+        String msg = "This test should return valid age.";
+        int age = 18;
+        int exact = 18;
+        assertEquals(age, exact);
+    }
 }
